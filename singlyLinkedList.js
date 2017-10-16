@@ -10,10 +10,6 @@ class Node {
          this.head = null;
          this.tail = null;
          this.length = 0;
-
-         this.get = function (index) {
-
-         }
      }
 
      push(newNode) {
@@ -49,6 +45,7 @@ class Node {
             return popped;
         }
     }
+
     unshift(newNode) {
         if(this.length === 0){
             this.head = this.tail = newNode;
@@ -174,7 +171,7 @@ class Node {
                 prev = current;
                 current = next;
             }
-            // this swaps tail and head 
+            // this swaps tail and head
             [this.head, this.tail] = [this.tail, this.head];
 
         }
